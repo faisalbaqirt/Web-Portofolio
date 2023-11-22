@@ -1,8 +1,27 @@
 // About.jsx
 
-import React from "react";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".hidden");
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const offset = window.innerHeight - rect.height / 2;
+
+        if (rect.top < offset) {
+          element.classList.add("fade-in");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="container">
       <h2 className="title-head">About Me</h2>
@@ -10,12 +29,14 @@ const About = () => {
         <div className="profile-left col-md-3 col-xs-12">
           <img
             className="profile-image"
-            src="https://res.cloudinary.com/dxgjnu4h8/image/upload/v1700488127/DSCF2032B_4x6_lgefvq.jpg"
+            src="https://res.cloudinary.com/dxgjnu4h8/image/upload/v1700641022/Desain_tanpa_judul__1_-removebg-preview_nyij7y.png"
             alt="Profile"
           />
           <div className="profile-details  mt-2">
-            <p>Faisal Baqir Tahmidi <br />
-            Bandung, 25 September 2001</p>
+            <p>
+              Faisal Baqir Tahmidi <br />
+              Bandung, 25 September 2001
+            </p>
           </div>
         </div>
         <div className="profile-right col-md-9 col-xs-12">
@@ -48,36 +69,36 @@ const About = () => {
         </div>
       </div>
       <div className="content-section mt-5">
-        <h6 className="title-section">Skills</h6>
-        <div className="skill-row row">
+        <h6 className="title-section hidden">Skills</h6>
+        <div className="skill-row row hidden">
           <div className="skill-column col-lg-4 col-md-6 col-sm-12">
             <div className="title-item">Programming Language</div>
             <div className="skill-list">Javascript</div>
           </div>
           <div className="skill-column col-lg-4 col-md-6 col-sm-12">
             <div className="title-item">Front End</div>
-            <div className="skill-list">React JS, HTML & CSS</div>
+            <div className="skill-list">React.js, HTML & CSS, Bootstrap</div>
           </div>
           <div className="skill-column col-lg-4 col-md-6 col-sm-12">
             <div className="title-item">Back End</div>
             <div className="skill-list">
-              Node JS, Express, Knex JS, PostgreSQL, Rest API
+              Node.js , Express.js, Knex.js, PostgreSQL, MySQL, REST APIs
             </div>
           </div>
         </div>
       </div>
 
       <div className="content-section mt-5">
-        <h6 className="title-section">Education</h6>
+        <h6 className="title-section hidden">Education</h6>
         <ul>
-          <li className="item-content">
+          <li className="item-content hidden">
             <div className="title-item">Bandung Islamic University</div>
             <div className="date-item">2018-2022</div>
             <div className="major-item">Accounting</div>
             <p>Graduated from Bandung Islamic University with a GPA of 3.45.</p>
           </li>
 
-          <li className="item-content">
+          <li className="item-content hidden">
             <div className="title-item">Binar Academy</div>
             <div className="date-item">June 2023 - November 2023</div>
             <div className="major-item">Fullstack Web Developer</div>
@@ -85,14 +106,20 @@ const About = () => {
               Successfully completing Fullstack Web Developer Bootcamp Program
               with a score of 98 and the predicate Graduate.
             </p>
+            <div className="skill-list">
+              <strong>Skills: </strong> Node.js · Express.js · React.js ·
+              Knex.js · PostgreSQL · REST APIs · Continuous Integration and
+              Continuous Delivery (CI/CD) · Jest · Postman · Test Driven Development ·
+              Time Management · Git · Render · Cloudinary
+            </div>
           </li>
         </ul>
       </div>
 
       <div className="content-section mt-5">
-        <h6 className="title-section">Experience</h6>
+        <h6 className="title-section hidden">Experience</h6>
         <ul>
-          <li className="item-content">
+          <li className="item-content hidden">
             <div className="title-item">
               KAP Koesbandijah, Beddy Samsi & Setiasih
             </div>
@@ -100,7 +127,7 @@ const About = () => {
             <div className="major-item">Assistant Auditor</div>
           </li>
 
-          <li className="item-content">
+          <li className="item-content hidden">
             <div className="title-item">PT Mizan Media Utama</div>
             <div className="date-item">August 2023</div>
             <div className="major-item">Financial Staff</div>

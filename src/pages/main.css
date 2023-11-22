@@ -1,4 +1,3 @@
-/* About.css */
 body,
 html {
   color: white;
@@ -33,57 +32,24 @@ h2::after {
 
 .title-head {
   margin: 10px;
+  animation: fadeInLeft 1s ease-in-out forwards;
 }
 
 .content {
   min-height: 100vh;
 }
 
-@media (min-width: 769px) {
-  .sidebar {
-    width: 250px;
-    padding: 20px;
-    min-height: 100vh;
-    position: fixed;
-    border-right: 1px solid var(--bs-secondary-color);
-  }
-
-  .sidebar .navbar {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin-top: 100px;
-  }
-
-  .content {
-    padding: 40px;
-    margin-left: 250px;
-  }
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: baseline;
-    width: 100% !important;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    z-index: 9995;
-    background-color: var(--bs-secondary-color);
-  }
-
-  .navbar {
-    width: 100%;
-  }
-
-  .content {
-    margin-top: 50px;
-  }
+.loader-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
 
 .sidebar ul>li>.nav-link {
@@ -111,7 +77,8 @@ h2::after {
 
 .navbar-toggler {
   border-color: white;
-} 
+}
+
 .navbar-toggler:hover {
   background-color: #64ffda;
 }
@@ -127,11 +94,17 @@ h2::after {
 /* Home */
 .home-container {
   align-items: center;
-  margin: 100px auto;
+  margin: 10px auto;
 }
+
+.introduction {
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
 .typewriter {
   color: #64ffda;
 }
+
 .home-content {
   display: flex;
   flex-direction: column-reverse;
@@ -140,21 +113,23 @@ h2::after {
 
 .home-image {
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0 -1px 10px 1px #64ffda;
+  filter: drop-shadow(0 0 5px rgba(100, 255, 218, 0.5));
+  animation: fadeIn 1s ease-in-out;
 }
 
-@media (min-width: 768px) {
-  .home-content {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
+.buttons-container {
+  animation: slideIn 1s ease-in-out;
 }
+
+.soc-med {
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
 
 /* about */
 .profile-left {
@@ -167,18 +142,22 @@ h2::after {
   width: auto;
   height: 300px;
   border-radius: 0;
+  transition: transform 0.3s ease-in-out;
+  filter: drop-shadow(0 0 5px rgba(100, 255, 218, 0.5));
+  animation: fadeInUp 1s ease-in-out forwards;
 }
 
 .profile-details {
   text-align: left;
+  animation: fadeInRight 1s ease-in-out forwards;
 }
 
 .about-content {
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: justify;
+  animation: fadeIn 1s ease-in-out forwards;
 }
-
 
 .title-section {
   font-weight: 400;
@@ -217,22 +196,6 @@ h2::after {
   margin-bottom: 10px;
 }
 
-@media (max-width: 992px) {
-  .skill-column {
-    flex: 0 0 calc(50% - 20px);
-  }
-}
-
-@media (max-width: 425px) {
-  .skill-column {
-    flex: 0 0 100%;
-  }
-}
-
-.item-content {
-  margin-bottom: 20px;
-}
-
 .title-item {
   font-weight: bold;
   font-size: 20px;
@@ -263,6 +226,7 @@ h2::after {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .project-column img {
@@ -288,6 +252,7 @@ h2::after {
   line-height: 1.5;
   color: #555;
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -309,7 +274,7 @@ h2::after {
   border-radius: 5px;
   max-width: 600px;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   max-height: 100vh;
   overflow-y: auto;
 }
@@ -322,9 +287,8 @@ h2::after {
   padding-bottom: 10px;
 }
 
-.modal-title {
-  font-size: 1.25rem;
-  font-weight: bold;
+.modal-content {
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal-body {
@@ -341,26 +305,148 @@ h2::after {
   object-fit: cover;
 }
 
+.contact-info {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
 
 
-@media (max-width: 768px) {
-  .project-column {
+@media (min-width: 992px) {
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+    min-height: 100vh;
+    position: fixed;
+    border-right: 1px solid var(--bs-secondary-color);
+  }
+
+  .sidebar .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 100px;
+  }
+
+  .content {
+    padding: 40px;
+    margin-left: 250px;
+  }
+
+  .home-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 9995;
+    background-color: var(--bs-secondary-color);
+  }
+
+  .navbar {
     width: 100%;
   }
+
+  .content {
+    margin-top: 50px;
+  }
+
+  .skill-column {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .project-column {
+    width: 45%;
+  }
+
   .modal-body img {
     width: 100%;
     height: auto;
     object-fit: cover;
   }
-  
-}
-/* footer*/
-#footer {
-  background: #262626;
-  padding: 40px 0 20px 0;
+
 }
 
-#footer p {
-  font-size: 14px;
-  color: #666;
+@media (max-width: 576px) {
+  .skill-column {
+    flex: 0 0 100%;
+  }
+
+  .project-column {
+    width: 100%;
+  }
+  
+}
+
+/* Keyframes */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-20px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(20px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

@@ -10,7 +10,7 @@ const Portfolio = () => {
         "https://res.cloudinary.com/dxgjnu4h8/image/upload/v1700563220/depositphotos_253385334-stock-illustration-vector-illustration-order-fast-food_bme9r0.webp",
       title: "Food Ordering Backend - Binar Academy",
       type: "Gold Challenge (Personal Project)",
-      techStack: "Node.js, Express.ks, Knex.js, PostgreSQL",
+      techStack: "Node.js, Express.js, Knex.js, PostgreSQL",
       description:
         "This project involved creating a backend system for a food ordering application. I developed it as a personal project to fullfill the criteria of the Gold Challenge at Binar Academy. I successfully completed the project and achieved a score of 95. The technologies used include Node.js, Express, Knex.js, and PostgreSQL.",
       repositoryLink: "https://github.com/faisalbaqirt/2300964-36-FBT-FoodOrdering-Gold",
@@ -20,7 +20,7 @@ const Portfolio = () => {
         "https://res.cloudinary.com/dxgjnu4h8/image/upload/v1700563537/Must-Have-Features-for-Your-Favourite-Restaurant-App_w6vcap.png",
       title: "Food Ordering - Binar Academy",
       type: "Platinum Challenge (Group Project - Scrum Master)",
-      techStack: "Node.js, React.js, Express.js, Knex.js, PostgreSQL",
+      techStack: "Node.js, Express.js, React.js, Knex.js, PostgreSQL",
       description:
         "This project was created to fulfill the criteria of the Platinum Challenge. Our group decided to continue my Gold Challenge project, and as a result, I was appointed as the Scrum Master. We achieved a score of 98 for this full-stack project, which utilized technologies such as Node.js, React.js, Express. js, Knex.js, and PostgreSQL",
       repositoryLink:
@@ -33,9 +33,9 @@ const Portfolio = () => {
         "https://res.cloudinary.com/dxgjnu4h8/image/upload/v1700564259/Desain_tanpa_judul_vdx7sr.png",
       title: "Web Portfolio - Personal Project",
       type: "Responsive Web Development",
-      techStack: "React.js, CSS, HTML",
+      techStack: "HTML, CSS, React.js, Node.js, Express.js",
       description:
-        "My personal web portfolio showcasing my skills and projects. Developed using React.js for a dynamic and responsive user experience.",
+        "My personal web portfolio showcasing my skills and projects. Developed using React.js for a dynamic and responsive user experience, and also using Express.js for contact form submission.",
       repositoryLink: "https://github.com/faisalbaqirt/Web-Portofolio",
       websiteLink: "https://web-portofolio-vssu.onrender.com",
     },
