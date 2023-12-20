@@ -89,9 +89,9 @@ const Portfolio = () => {
                 <div className="description">
                   <p>{selectedProject.description}</p>
                 </div>
-                <div className="repository-links">
+                <div className="project-links mt-2">
                   {selectedProject.repositoryLink && (
-                    <div>
+                    <div className="project-link ms-3">
                       <a
                         href={selectedProject.repositoryLink}
                         target="_blank"
@@ -103,19 +103,19 @@ const Portfolio = () => {
                   )}
 
                   {selectedProject.repositoryLink2 && (
-                    <div>
+                    <div className="project-link ms-3">
                       <a
                         href={selectedProject.repositoryLink2}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Repository2 
+                        Repository 2 
                       </a>
                     </div>
                   )}
 
                   {selectedProject.websiteLink && (
-                    <div>
+                    <div className="project-link ms-3">
                       <a
                         href={selectedProject.websiteLink}
                         target="_blank"

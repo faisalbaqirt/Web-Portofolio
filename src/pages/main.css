@@ -253,6 +253,20 @@ h2::after {
   color: #555;
 }
 
+.project-links {
+  display: flex;
+}
+
+.project-link {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.project-link a {
+  text-decoration: none;
+}
+
 .modal {
   display: none;
   position: fixed;
