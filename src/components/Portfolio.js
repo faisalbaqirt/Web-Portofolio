@@ -18,7 +18,7 @@ const Portfolio = () => {
     {
       imgSrc:
         "https://res.cloudinary.com/dxgjnu4h8/image/upload/v1700563537/Must-Have-Features-for-Your-Favourite-Restaurant-App_w6vcap.png",
-      title: "Food Ordering - Binar Academy",
+      title: "Food Ordering Web App - Binar Academy",
       type: "Platinum Challenge (Group Project - Scrum Master)",
       techStack: "Node.js, Express.js, React.js, Knex.js, PostgreSQL",
       description:
@@ -31,8 +31,8 @@ const Portfolio = () => {
     {
       imgSrc:
         "https://res.cloudinary.com/dxgjnu4h8/image/upload/v1700564259/Desain_tanpa_judul_vdx7sr.png",
-      title: "Web Portfolio - Personal Project",
-      type: "Responsive Web Development",
+      title: "Web Portfolio",
+      type: "Responsive Web Development (Personal Project)",
       techStack: "HTML, CSS, React.js, Node.js, Express.js",
       description:
         "My personal web portfolio showcasing my skills and projects. Developed using React.js for a dynamic and responsive user experience, and also using Express.js for contact form submission.",
@@ -74,7 +74,7 @@ const Portfolio = () => {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <div className="title-item">{selectedProject.title}</div>
+                <div className="title-item text-black">{selectedProject.title}</div>
                 <button
                   type="button"
                   className="btn-close"
