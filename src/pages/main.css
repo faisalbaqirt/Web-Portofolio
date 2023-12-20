@@ -251,6 +251,7 @@ h2::after {
 .description p {
   line-height: 1.5;
   color: #555;
+  text-align: justify;
 }
 
 .project-links {

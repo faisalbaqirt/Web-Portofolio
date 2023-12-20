@@ -31,13 +31,26 @@ const Portfolio = () => {
     {
       imgSrc:
         "https://res.cloudinary.com/dxgjnu4h8/image/upload/v1700564259/Desain_tanpa_judul_vdx7sr.png",
-      title: "Web Portfolio",
-      type: "Responsive Web Development (Personal Project)",
+      title: "Web Portfolio - Personal Project",
+      type: "Responsive Web Development",
       techStack: "HTML, CSS, React.js, Node.js, Express.js",
       description:
         "My personal web portfolio showcasing my skills and projects. Developed using React.js for a dynamic and responsive user experience, and also using Express.js for contact form submission.",
       repositoryLink: "https://github.com/faisalbaqirt/Web-Portofolio",
       websiteLink: "https://web-portofolio-vssu.onrender.com",
+    },
+    {
+      imgSrc:
+        "https://res.cloudinary.com/dxgjnu4h8/image/upload/v1703078146/todolist_jt7qnf.jpg",
+      title: "Todo List Web App - Personal Project",
+      type: "Task Management Web Application",
+      techStack: "Node.js, Express.js, Knex.js, PostgreSQL, React.js, Redux",
+      description:
+        "A Todolist Web App that helps users manage their tasks efficiently. Built using React.js for the frontend, Node.js and Express.js for the backend, and PostgreSQL for database storage. Redux is utilized for state management, providing a seamless user experience. With a simple interface and intuitive functionality, this app allows users to add, update, and delete tasks with ease.",
+      repositoryLink:
+        "https://github.com/faisalbaqirt/todolist_frontend",
+      repositoryLink2: "https://github.com/faisalbaqirt/todolist_backend",
+      websiteLink: "https://life-simplify.onrender.com/",
     },
   ];
 
