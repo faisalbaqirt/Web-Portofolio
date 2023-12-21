@@ -80,10 +80,10 @@ const About = () => {
           <li className="item-content hidden">
             <div className="title-item">Binar Academy</div>
             <div className="date-item">June 2023 - November 2023</div>
-            <div className="major-item">Fullstack Web Developer</div>
+            <div className="major-item">Fullstack Web Development</div>
             <p>
-              Successfully completing Fullstack Web Developer Bootcamp Program
-              with a score of 98 and the predicate Graduate.
+              Successfully completing Fullstack Web Development Bootcamp Program
+              with an average score of 4.8 and the predicate Graduate.
             </p>
           </li>
         </ul>
@@ -94,13 +94,21 @@ const About = () => {
         <div className="skill-row row hidden">
           <div className="skill-column col-md-6 col-sm-12">
             <div className="title-item">Hard Skills</div>
-            <div className="skill-list">HTML · CSS · Javascript · Node.js · Express.js · React.js · Knex.js · PostgreSQL · MySQL · REST API · Continuous Integration and
-Continuous Delivery (CI/CD) · Jest · Postman · Git · Render · Cloudinary</div>
+            <div className="skill-list">
+              HTML · CSS · Javascript · Node.js · Express.js · React.js ·
+              Knex.js · PostgreSQL · MySQL · REST API · Continuous Integration
+              and Continuous Delivery (CI/CD) · Jest · Postman · Git · Render ·
+              Cloudinary
+            </div>
           </div>
           <div className="skill-column col-md-6 col-sm-12">
             <div className="title-item">Soft Skills</div>
-            <div className="skill-list">Attention to Detail · Learning Drive · Growth Mindset · Grit · Self-Regulated Learning · Critical Thinking · Problem
-Solving · Creative Thinking · Learning Agility · Communication · Management · Leadership · Teamwork</div>
+            <div className="skill-list">
+              Attention to Detail · Learning Drive · Growth Mindset · Grit ·
+              Self-Regulated Learning · Critical Thinking · Problem Solving ·
+              Creative Thinking · Learning Agility · Communication · Management
+              · Leadership · Teamwork
+            </div>
           </div>
         </div>
       </div>
