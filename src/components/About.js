@@ -66,25 +66,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="content-section mt-5">
-        <h6 className="title-section hidden">Skills</h6>
-        <div className="skill-row row hidden">
-          <div className="skill-column col-lg-4 col-md-6 col-sm-12">
-            <div className="title-item">Programming Language</div>
-            <div className="skill-list">Javascript</div>
-          </div>
-          <div className="skill-column col-lg-4 col-md-6 col-sm-12">
-            <div className="title-item">Front End</div>
-            <div className="skill-list">React.js, HTML & CSS, Bootstrap</div>
-          </div>
-          <div className="skill-column col-lg-4 col-md-6 col-sm-12">
-            <div className="title-item">Back End</div>
-            <div className="skill-list">
-              Node.js , Express.js, Knex.js, PostgreSQL, MySQL, REST APIs
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className="content-section mt-5">
         <h6 className="title-section hidden">Education</h6>
@@ -108,6 +89,21 @@ const About = () => {
         </ul>
       </div>
 
+      <div className="content-section mt-5">
+        <h6 className="title-section hidden">Skills</h6>
+        <div className="skill-row row hidden">
+          <div className="skill-column col-md-6 col-sm-12">
+            <div className="title-item">Hard Skills</div>
+            <div className="skill-list">HTML · CSS · Javascript · Node.js · Express.js · React.js · Knex.js · PostgreSQL · MySQL · REST API · Continuous Integration and
+Continuous Delivery (CI/CD) · Jest · Postman · Git · Render · Cloudinary</div>
+          </div>
+          <div className="skill-column col-md-6 col-sm-12">
+            <div className="title-item">Soft Skills</div>
+            <div className="skill-list">Attention to Detail · Learning Drive · Growth Mindset · Grit · Self-Regulated Learning · Critical Thinking · Problem
+Solving · Creative Thinking · Learning Agility · Communication · Management · Leadership · Teamwork</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
