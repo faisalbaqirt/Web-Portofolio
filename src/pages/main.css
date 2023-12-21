@@ -140,7 +140,7 @@ h2::after {
 
 .profile-image {
   width: auto;
-  height: 300px;
+  height: 290px;
   border-radius: 0;
   transition: transform 0.3s ease-in-out;
   filter: drop-shadow(0 0 5px rgba(100, 255, 218, 0.5));
@@ -182,11 +182,11 @@ h2::after {
 .skill-row {
   display: flex;
   justify-content: space-between;
-  margin: -10px;
+  padding: 0 10px;
 }
 
 .skill-column {
-  flex: 0 0 calc(33.33% - 20px);
+  flex: 0 0 calc(50% - 20px);
   margin: 10px 0;
   padding: 10px;
   background-color: var(--bs-secondary-color);
@@ -194,6 +194,7 @@ h2::after {
 
 .skill-list {
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 .title-item {
@@ -375,10 +376,6 @@ h2::after {
 
   .content {
     margin-top: 50px;
-  }
-
-  .skill-column {
-    flex: 0 0 calc(50% - 20px);
   }
 
   .project-column {
