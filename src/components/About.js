@@ -116,24 +116,6 @@ const About = () => {
         </ul>
       </div>
 
-      <div className="content-section mt-5">
-        <h6 className="title-section hidden">Experience</h6>
-        <ul>
-          <li className="item-content hidden">
-            <div className="title-item">
-              KAP Koesbandijah, Beddy Samsi & Setiasih
-            </div>
-            <div className="date-item">January 2023 - May 2023</div>
-            <div className="major-item">Assistant Auditor</div>
-          </li>
-
-          <li className="item-content hidden">
-            <div className="title-item">PT Mizan Media Utama</div>
-            <div className="date-item">August 2023</div>
-            <div className="major-item">Financial Staff</div>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 };
