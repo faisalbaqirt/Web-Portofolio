@@ -1,5 +1,3 @@
-// About.jsx
-
 import { useEffect } from "react";
 
 const About = () => {
@@ -106,12 +104,6 @@ const About = () => {
               Successfully completing Fullstack Web Developer Bootcamp Program
               with a score of 98 and the predicate Graduate.
             </p>
-            <div className="skill-list">
-              <strong>Skills: </strong> Node.js · Express.js · React.js ·
-              Knex.js · PostgreSQL · REST APIs · Continuous Integration and
-              Continuous Delivery (CI/CD) · Jest · Postman · Test Driven Development ·
-              Time Management · Git · Render · Cloudinary
-            </div>
           </li>
         </ul>
       </div>
