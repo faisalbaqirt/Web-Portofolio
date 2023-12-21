@@ -20,6 +20,12 @@ const About = () => {
     };
   }, []);
 
+  const handleDownload = () => {
+    const downloadUrl =
+      "https://drive.google.com/uc?export=download&id=10Q2uNvWk3X_zuVIu32PQEQbub80nqFYg";
+    window.location.href = downloadUrl;
+  };
+
   return (
     <div className="container">
       <h2 className="title-head">About Me</h2>
@@ -30,11 +36,15 @@ const About = () => {
             src="https://res.cloudinary.com/dxgjnu4h8/image/upload/v1700641022/Desain_tanpa_judul__1_-removebg-preview_nyij7y.png"
             alt="Profile"
           />
-          <div className="profile-details  mt-2">
-            <p>
-              Faisal Baqir Tahmidi <br />
-              Bandung, 25 September 2001
-            </p>
+          <div className="profile-details mb-2 mt-2">
+            <p>Faisal Baqir Tahmidi</p>
+            <button
+              className="btn btn-dark"
+              style={{ padding: "5px" }}
+              onClick={handleDownload}
+            >
+              Download Resume
+            </button>
           </div>
         </div>
         <div className="profile-right col-md-9 col-xs-12">
@@ -61,7 +71,8 @@ const About = () => {
               I am driven by the desire to contribute innovative solutions to
               the evolving tech landscape. Constantly seeking opportunities for
               learning and growth, I am excited about the prospect of making a
-              meaningful impact in the field of Fullstack Web Development.
+              meaningful impact in the field of Fullstack Web Development,
+              including Frontend Web Development and Backend Web Development.
             </p>
           </div>
         </div>
