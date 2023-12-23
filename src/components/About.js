@@ -21,8 +21,7 @@ const About = () => {
   }, []);
 
   const handleDownload = () => {
-    const downloadUrl =
-      "https://drive.google.com/uc?export=download&id=10Q2uNvWk3X_zuVIu32PQEQbub80nqFYg";
+    const downloadUrl = process.env.REACT_APP_RESUME_URL;
     window.location.href = downloadUrl;
   };
 
